@@ -7,6 +7,8 @@
     <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.4/dist/aframe-extras.min.js"></script>
 
     <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+     <meta name="description" content="360 Video — A-Frame">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <script>
       AFRAME.registerComponent("vidhandler", {
         // ...
@@ -41,7 +43,7 @@
           id="vid"
           src="https://cdn.glitch.com/b62367d1-ceab-454b-b664-b032f995ed86%2FBig_Buck_Bunny_Trailer_1080p.ogv.720p.webm?1532370072191"
           loop="true"
-          crossorigin
+          webkit-playsinline
         ></video>
 
         <!-- <video id="vid" src="./video.mp4" loop="true" crossorigin></video> -->
@@ -50,7 +52,7 @@
       <a-marker id="memarker" preset="hiro" vidhandler>
         <a-plane
           position="1 2 -2"
-          scale="2 2 2"
+          scale="1 1 1"
           width="2"
           rotation="-90 0 0"
           material="transparent:false;opacity: 1;src:#vid"
