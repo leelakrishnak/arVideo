@@ -1,44 +1,133 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-  <!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
-  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
-  <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.4/dist/aframe-extras.min.js"></script>
+    <title>leelakrishna</title>
+    <link rel="stylesheet" href="./leelak_resume.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
 
-  <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
-  <script>
-AFRAME.registerComponent('vidhandler', {
-  // ...
-  init: function () {
-    // Set up initial state and variables.
-    this.toggle = false;
-    this.vid = document.querySelector("#vid")
-    this.vid.pause();
-  },
-  tick:function(){
-    
-if(this.el.object3D.visible == true){
-  if(!this.toggle){
-     this.toggle = true;
-     this.vid.play();
-    }
-  }else{
-  this.toggle = false;
-    this.vid.pause();
-    }
-  }
-});
-  </script>
-  <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs>
-  	<a-marker preset="hiro">
-            <a-plane src='https://cdn.glitch.com/b62367d1-ceab-454b-b664-b032f995ed86%2FBig_Buck_Bunny_Trailer_1080p.ogv.720p.webm?1532370072191' position='0 0.2 0' rotation= '-90 0 0' material='color: yellow;'></a-plane>
+<body style="font-family:'Courier New'">
+    <div class="container">
+        <div class="grid-container">
+            <div class="grid-container-div1">
+                <div class="font" style="color: rgb(63, 199, 253);">LeelaKrishna Kantamneni</div>
+                <div class="font1">FREMONT,CA &nbsp;&nbsp;.&nbsp;&nbsp; klkrishna.cse@gmail.com</div>
+                <br>
+                <span class="fontweight font2">PROFILE</span><br>
+                <span class="font2">
+                    <p>I am a software developer with more than 8 years of industry experieence
+                        in various domains,currently focused on creating applications for Mobile(Android),AOSP,Web and
+                        also very
+                        agile in adapting new technologies.<br>I love to code and contribute to open source in my free
+                        time,
+                        I have designed and developed a medium to bring producers and consumers together in logistic
+                        industry recently.
+                    </p>
+                </span>
 
-  	</a-marker>
-  	<a-entity camera></a-entity>
-    </a-scene>
+                <p><span class="fontweight font2">EMPLOYMENT HISTORY</span><br>
+                    <span class="fontweight pgap">Software engineer, PathPartner Technology Inc (Client
+                        Facebook)</span><br>
+                    <span class="font1">May 2018 , Fremont,CA,USA</span><br>
+                    <span class="font2">I am currently working on a video calling app for Facebook portal which runs on
+                        Android, I am mainly
+                        responsible for developing tools to improve over all quality of a video call,also developed
+                        proof of concepts
+                        to imorove the in call experience.
+                    </span>
+                </p>
+                </p>
+
+                <p><span class="fontweight">Senior software engineer, PathPartner Technology Pvt Ltd.</span>
+                    <br>
+                    <span class="font1">Jan 2012 - May 2018, Banglore,India</span><br>
+                    <span class="font2">I have been a part of mutiple projects for Android,Web applications.
+                        Modified Android native frameworks,worked for clients like TPVision, Samsung, Sony.
+                    </span>
+                </p>
+
+                <p><span class="fontweight">Android TV</span>
+                    <span class="font2">-Worked on Android media streaming framework written in stagefright Openmax.
+                    </span>
+                </p>
+                <p><span class="fontweight">PNY player</span>
+                    <span class="font2">-Android mobile app based on Gstreamer and playread DRM.
+                    </span>
+                </p>
+                <p><span class="fontweight">Smart helmet</span>
+                    <span class="font2">-Helmet for bikers runs on Android,worked on customizing AOSP for the use case.
+                    </span>
+                </p>
+                <p><span class="fontweight">HDR App</span>
+                    <span class="font2">-Android camera application written to take HDR photos along with other effects.
+                    </span>
+                </p>
+
+                <p><span class="fontweight">Software engineer, Vu TelePresence Inc</span>
+                    <br>
+                    <span class="font1">April 2010 - Jan 2018, Banglore,India</span><br>
+                    <span class="font2">My team was working on a video conferencing project based on Gstreamer runs
+                        on Linux,I was mainly involved into XMPP signaling farmework developed in Java.
+                    </span>
+                </p>
+
+                <p><span class="fontweight font2">EDUCATION</span><br>
+                    <span class="fontweight">JNTU Kakinada, Bachelors in computer science</span><br>
+                    <span class="font1">Jun 2005 - Apr 2009 ,India</span><br>
+                </p>
+
+                <p><span class="fontweight font2">HOBBYIST HACKS</span><br>
+                    <span class="fontweight">TripsTrucks</span><br>
+                    <span class="font2">The idea is to connect users and truck owners and also to help managing the
+                        fleet,
+                        The web app and mobile app are written in ReactJs and React Native,back end using
+                        NodeJs,MongoDB.(triostrucks.com).
+                        Entierly designed and developed by me.
+                    </span><br>
+                </p>
+
+                <p><span class="fontweight">PJLogs</span><br>
+                    <span class="font2">This web application takes VOIP sets that were printed during a call and shown
+                        as interactive graphs to analyze the data. Technologies used PHP,React,Java.
+                    </span><br>
+                </p>
+
+                <p><span class="fontweight">PPFloorpaln</span><br>
+                    <span class="font2">Utility web application written for a company,it helps to find colleagues desk
+                        loacation.
+                        Employees can search by using name, employee id or mobile.
+                    </span><br>
+                </p>
+
+                <p><span class="fontweight">UTC24</span><br>
+                    <span class="font2">Mobile contacts app showns friend's timezone and last active status.
+                    </span><br>
+                </p>
+
+            </div>
+            <div class="grid-container-div2">
+                <p>
+                <div class="fontweight font2">DETAILS</div>
+                <div class="font3">Fremont, CA</div>
+                <div class="font1">+1 (510)737-9990</div>
+                </p>
+                <p><span class="fontweight font2">SKILLS</span><br>
+                    <span class="font2">Java, Javascript, C, C++, Python, HTML, Kotlin, CSS
+                        <br>Android, AOSP, ReactJs, React native, NodeJs, WebRTC<br>
+                        Mongo DB, MySQL, SQLite, Firebase, Elastic search<br>
+                        Git, Hg, Svn, Gerrit, Jenkins<br>XMPP, SIP, Websockets, MQTT<br>
+                        Amazon AWS, Google services, Bitbucket<br>Android Studio, Intellij, VSCode, Atom, Vim
+                        <br>Gradle, Buck, Make, ndk<br>XML, YAML, JSON, SDP</span>
+                </p>
+                <br>
+                <span class="fontweight font2">LINKS</span><br>
+                <span class="font2" style="color: rgb(63, 199, 253);"><a
+                        href="https://github.com/leelakrishnak">Github</a></span><br>
+                <span class="font2" style="color: rgb(63, 199, 253);"><a
+                        href="https://www.linkedin.com/in/leelakrishna-kantamneni-04625b30/">Linked in</a></span><br>
+            </div>
+        </div>
+    </div>
 </body>
-
-
-</html>
